@@ -1,0 +1,63 @@
+
+use('game');
+
+db.battle.drop();
+
+db.battle.insertOne({
+  "id": "kfkfkffkfflflfjflfjflfsd",
+    "playerOne": {
+        "pokemonOne": {
+            "_id": "pokemon::001",
+            "name": "Blubasaur",
+            "Image": "http://www.pokemondungeon.com/images/igallery/resized/3001-3100/001Bulbasaur_Dream-3005-800-600-100.png",
+            "number": 122,
+            "hp": 100,
+            "pp": 10,
+            "moves": [
+            {
+                "name": "Vin whip",
+                "damage": 15,
+                "pp": 2
+            },
+            {
+                "name": "Tackle",
+                "damage": 10,
+                "pp": 1
+            },
+            {
+                "name": "Rest",
+                "damage": 0,
+                "pp": 1
+            }
+            ]
+        },
+    },
+    "playerTow": {
+            "_id": "pokemon::301",
+            "name": "Charmander",
+            "Image": "http://www.pokemondungeon.com/images/igallery/resized/3001-3100/004Charmander_Dream-3009-800-600-100.png",
+            "number": 100,
+            "hp": 100,
+            "pp": 10,
+            "moves": [
+            {
+                "name": "Bite",
+                "damage": 25,
+                "pp": 2
+            },
+            {
+                "name": "Ember",
+                "damage": 20,
+                "pp": 1
+            },
+            {
+                "name": "Rest",
+                "damage": 0,
+                "pp": -3
+            }
+            ]
+    }
+
+})
+
+db.battle.find({})

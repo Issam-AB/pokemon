@@ -1,0 +1,248 @@
+use('game');
+
+db.pokemon.drop();
+
+db.pokemon.insertMany([
+  {
+    "_id": "pokemon::001",
+    "name": "Blubasaur",
+    "Image": "http://www.pokemondungeon.com/images/igallery/resized/3001-3100/001Bulbasaur_Dream-3005-800-600-100.png",
+    "number": 122,
+    "hp": 100,
+    "pp": 10,
+    "moves": [
+      {
+      "name": "Vin whip",
+      "damage": 15,
+      "pp": 2
+      },
+      {
+
+      "name": "Tackle",
+      "damage": 10,
+      "pp": 1
+      },
+
+      {
+
+      "name": "Rest",
+      "damage": 0,
+      "pp": 1
+      }
+
+    ]
+
+  },
+    {
+    "_id": "pokemon::301",
+    "name": "Charmander",
+    "Image": "http://www.pokemondungeon.com/images/igallery/resized/3001-3100/004Charmander_Dream-3009-800-600-100.png",
+    "number": 100,
+    "hp": 100,
+    "pp": 10,
+    "moves": [
+      {
+      "name": "Bite",
+      "damage": 25,
+      "pp": 2
+      },
+      {
+
+      "name": "Ember",
+      "damage": 20,
+      "pp": 1
+      },
+
+      {
+
+      "name": "Rest",
+      "damage": 0,
+      "pp": -3
+      }
+
+    ]
+
+  },
+    {
+    "_id": "pokemon::143",
+    "name": "Charmeleon Dream",
+    "Image": "http://www.pokemondungeon.com/images/igallery/resized/3001-3100/005Charmeleon_Dream-3010-800-600-100.png",
+    "number": 11,
+    "hp": 100,
+    "pp": 10,
+    "moves": [
+      {
+      "name": "Spreak",
+      "damage": 15,
+      "pp": 3
+      },
+      {
+
+      "name": "Wild charge",
+      "damage": 25,
+      "pp": 4
+      },
+
+      {
+
+      "name": "Rest",
+      "damage": 0,
+      "pp": -3
+      }
+
+    ]
+
+  },
+  {
+    "_id": "pokemon::023",
+    "name": "Ivysaur Dream",
+    "Image": "http://www.pokemondungeon.com/images/igallery/resized/3001-3100/002Ivysaur_Dream-3006-800-600-100.png",
+    "number": 70,
+    "hp": 99,
+    "pp": 10,
+    "moves": [
+      {
+      "name": "Vin whip",
+      "damage": 15,
+      "pp": 2
+      },
+      {
+
+      "name": "Tackle",
+      "damage": 20,
+      "pp": 1
+      },
+
+      {
+
+      "name": "Rest",
+      "damage": 0,
+      "pp": 1
+      }
+
+    ]
+
+  },
+  {
+    "_id": "pokemon::101",
+    "name": "Mega Dream",
+    "Image": "http://www.pokemondungeon.com/images/igallery/resized/3001-3100/009Blastoise_Mega_Dream-3018-800-600-100.png",
+    "number": 90,
+    "hp": 90,
+    "pp": 9,
+    "moves": [
+      {
+      "name": "Vin whip",
+      "damage": 10,
+      "pp": 2
+      },
+      {
+
+      "name": "Tackle",
+      "damage": 10,
+      "pp": 1
+      },
+
+      {
+
+      "name": "Rest",
+      "damage": 2,
+      "pp": 0
+      }
+
+    ]
+
+  },
+  {
+    "_id": "pokemon::010",
+    "name": "Caterpie Dream",
+    "Image": "http://www.pokemondungeon.com/images/igallery/resized/3001-3100/010Caterpie_Dream-3019-800-600-100.png",
+    "number": 122,
+    "hp": 95,
+    "pp": 10,
+    "moves": [
+      {
+      "name": "Vin whip",
+      "damage": 5,
+      "pp": 2
+      },
+      {
+
+      "name": "Tackle",
+      "damage": 10,
+      "pp": 1
+      },
+
+      {
+
+      "name": "Rest",
+      "damage": 0,
+      "pp": 1
+      }
+
+    ]
+
+  },
+  {
+    "_id": "pokemon::024",
+    "name": "Arbok Dream",
+    "Image": "http://www.pokemondungeon.com/images/igallery/resized/3001-3100/024Arbok_Dream-3037-800-600-100.png",
+    "number": 54,
+    "hp": 100,
+    "pp": 10,
+    "moves": [
+      {
+      "name": "Vin whip",
+      "damage": 15,
+      "pp": 2
+      },
+      {
+
+      "name": "Tackle",
+      "damage": 10,
+      "pp": 1
+      },
+
+      {
+
+      "name": "Rest",
+      "damage": 0,
+      "pp": 1
+      }
+
+    ]
+
+  },
+  {
+    "_id": "pokemon::025",
+    "name": "Pikachu Dream",
+    "Image": "http://www.pokemondungeon.com/images/igallery/resized/3001-3100/025Pikachu_Dream-3039-800-600-100.png",
+    "number": 155,
+    "hp": 100,
+    "pp": 10,
+    "moves": [
+      {
+      "name": "Vin whip",
+      "damage": 15,
+      "pp": 2
+      },
+      {
+
+      "name": "Tackle",
+      "damage": 10,
+      "pp": 1
+      },
+
+      {
+
+      "name": "Rest",
+      "damage": 0,
+      "pp": 1
+      }
+
+    ]
+
+  },
+])
+
+db.pokemon.find({})
